@@ -9,6 +9,7 @@ function History({ history, moveTo, currentMove }) {
                 type="button"
                 className={`${currentMove === i ? 'active' : ''}btn-move`}
                 onClick={() => moveTo(i)}
+                style={{ fontWeight: currentMove === i ? 'bold' : 'normal' }}
               >
                 {i === 0 ? 'Go to game start' : `Go to move #${i}`}
               </button>
